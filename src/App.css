@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+body {
+  background-color: rgb(155, 183, 236);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text {
+  margin: 20px;
+  padding: 0 20px ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-self: center;
+}
+
+.icon {
+  box-shadow: none;
+}
+
+p {
+  text-align: justify;
+  font-size: 23px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+img {
+  box-shadow: 2px 2px 20px black;
+}
+
+.btnShowText {
+  border: none;
+  background: transparent;
+  font-size: 23px;
+  color: blue;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btnDelete {
+  padding:20px 30px;
+  margin: 10px;
+  background-color: blue;
   color: white;
+  font-size: 23px;
+  border: none;
+  box-shadow: 1px 2px 20px black;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btnBack, .btnNext{
+  padding: 30px;
+  border: none;
+  background: transparent;
+  border-radius: 50%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media all and (max-width: 1024px) {
+  img {
+    width: 500px;
   }
-  to {
-    transform: rotate(360deg);
+  p {
+    font-size: 18px;
+  }
+  .icon {
+    width: 28px;
+  }
+  .Piramida {
+    width: 600px;
+    height: auto;
+  }
+  .btnDelete {
+    padding: 10px;
+    font-size: 18px;
   }
 }
